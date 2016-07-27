@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" href="./images/favicon_1.ico">
+
+        <title>Retailer Sales Management System</title>
+
+        <!-- Google-Fonts -->
+        <link href="./css/css.css" rel="stylesheet">
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link href="./css/bootstrap-reset.css" rel="stylesheet">
+
+        <!--Animation css-->
+        <link href="./css/animate.css" rel="stylesheet">
+
+        <!--Icon-fonts css-->
+        <link href="./css/font-awesome.css" rel="stylesheet">
+        <link href="./css/ionicons.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/helper.css" rel="stylesheet">
+        <link href="./css/style-responsive.css" rel="stylesheet">
+        
+        <!-- Imported styles for graph legends-->
+        <link href="./css/rickshaw.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+
+    <body class="  pace-done"><div class="pace  pace-inactive"><div data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px);" class="pace-progress">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+              #parse("/templates/leftNav.vtl");
+
+
+
+
+        <!--Main Content Start -->
+        <section class="content">
+            
+           
+                
+
+            <!-- Page Content Start -->
+            <!-- ================== -->
+
+            <div class="wraper container-fluid">
+                <div class="page-title"> 
+                        <h3 class="title">Charts</h3> 
+                    </div>
+
+
+                 <div class="row">
+                
+                    <div class="col-lg-12">
+                        <div class="portlet"><!-- /primary heading -->
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Line Chart
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet1"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet1" class="panel-collapse collapse in">
+                                <div class="portlet-body chartJS">
+                                    <canvas style="width: 489px; height: 250px;" id="lineChart" data-type="Line" width="489" height="250"></canvas>
+                                </div>
+                                <div id="legend" class="column rickshaw_legend">
+									<ul class="ui-sortable">
+										<li class="line">
+											<!--a class="action">✔</a-->
+											<div>
+												<p><span class="swatch" style="background-color: rgba(0,255,255,10)"></span>
+													<span class="label">Deposit</span></p>
+											</div>
+										</li>
+										<li class="line">
+											<!--a class="action">✔</a-->
+											<div>
+												<p><span class="swatch" style="background-color: rgba(28,33,100,10)"></span>
+													<span class="label">Sales</span></p>
+											</div>
+										</li>
+									</ul>
+                                </div>
+                            </div>
+                        </div> <!-- /Portlet -->
+                    </div>
+                    
+                    <!--div class="col-lg-6">
+                        <div class="portlet"--><!-- /primary heading -->
+                            <!--div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Bar chart
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet2"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <!--a href="#" data-toggle="remove"><i class="ion-close-round"--></i></a-->
+                                <!--/div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet2" class="panel-collapse collapse in">
+                                <div class="portlet-body">
+                                    <canvas style="width: 489px; height: 250px;" id="bar" data-type="Bar" height="250" width="489"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div-->
+                
+                </div> <!-- End row -->
+
+
+                <div class="row">
+                
+                    <div class="col-lg-6">
+                        <div class="portlet"><!-- /primary heading -->
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Pie chart
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet3"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet3" class="panel-collapse collapse in">
+                                <div class="portlet-body">
+                                    <canvas style="width: 489px; height: 250px;" id="pie" data-type="Pie" height="250" width="489"></canvas> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="portlet"><!-- /primary heading -->
+                            <div class="portlet-heading">
+                                <h3 class="portlet-title text-dark">
+                                    Pie chart
+                                </h3>
+                                <div class="portlet-widgets">
+                                    <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                                    <span class="divider"></span>
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#portlet4"><i class="ion-minus-round"></i></a>
+                                    <span class="divider"></span>
+                                    <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="portlet4" class="panel-collapse collapse in">
+                                <div class="portlet-body">
+                                    <canvas style="width: 489px; height: 250px;" id="pie2" data-type="Pie" height="250" width="489"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+         /                </div>  <!-- End row -->
+                    
+            </div>
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                2016 © LOTS.
+            </footer>
+            <!-- Footer Ends -->
+
+
+        </section>
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery_002.js"></script>
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/pace.js"></script>
+        <script src="./js/modernizr.js"></script>
+        <script src="./js/wow.js"></script>
+        <script src="./js/jquery_003.js" type="text/javascript"></script>
+
+        <!-- Chart JS -->
+        <script src="./js/chart.js"></script>
+        <script src="./js/chartjs.js"></script>
+        
+        <!-- Chart Rickshaw -->
+        <script src="./js/rickshaw.js"></script>
+        <script src="./js/rickshaw_002.js"></script>
+        
+
+        <script src="./js/jquery.js"></script><div style="width: 7px; z-index: 3; cursor: default; position: absolute; top: 0px; left: 273px; height: 327px; display: none;" class="nicescroll-rails" id="ascrail2000"><div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(157, 158, 165); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="height: 7px; z-index: 3; top: 320px; left: 0px; position: absolute; cursor: default; display: none;" class="nicescroll-rails" id="ascrail2000-hr"><div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(157, 158, 165); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="width: 7px; z-index: 3; cursor: default; position: absolute; top: 0px; left: 273px; height: 267px; display: none;" class="nicescroll-rails" id="ascrail2001"><div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(157, 158, 165); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="height: 7px; z-index: 3; top: 260px; left: 0px; position: absolute; cursor: default; display: none;" class="nicescroll-rails" id="ascrail2001-hr"><div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(157, 158, 165); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="width: 5px; z-index: auto; cursor: default; position: fixed; top: 0px; left: 225px; height: 657px; opacity: 0;" class="nicescroll-rails" id="ascrail2002"><div style="position: relative; top: 0px; float: right; width: 5px; height: 525px; background-color: rgb(142, 144, 154); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="height: 5px; z-index: auto; top: 652px; left: 0px; position: fixed; cursor: default; display: none; width: 225px; opacity: 0;" class="nicescroll-rails" id="ascrail2002-hr"><div style="position: relative; top: 0px; height: 5px; width: 230px; background-color: rgb(142, 144, 154); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div>
+    
+
+    
+
+</body></html>

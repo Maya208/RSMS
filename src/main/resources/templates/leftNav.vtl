@@ -1,0 +1,34 @@
+ <!-- Aside Start-->
+        <aside class="left-panel" tabindex="5002" style="overflow: hidden; outline: none;">
+
+            <!-- brand -->
+            <div class="logo">
+                <a href="http://www.lotsservices.com" class="logo-expanded">
+                    <img src="./images/logo.png" alt="logo">
+                    <span class="logo-expanded">RSMS</span>
+                                    </a>
+            </div>
+            <!-- / brand -->
+  
+            <!-- Navbar Start -->
+             <nav class="navigation">
+                <ul class="list-unstyled">
+                    
+                    <li #if ($page == "dashboard") class="active" #end>
+                        <a href="dashboard"><i class="ion-home"></i> <span class="nav-label">Dashboard</span></a>
+                   </li>
+                   <li #if ($page == "lmcs") class="active" #end>
+                        <a href="lmc_table_files"><i class="ion-flask"></i> <span class="nav-label">LMCs</span></a> 
+                    </li>
+                    <li #if ($page == "retailers") class="active" #end>
+                        <a href="retailer_table_files"><i class="ion-settings"></i> <span class="nav-label">Retailers</span></a> 
+                    </li>
+                    <li #if ($page == "notification") class="active" #end>
+                        <a href="notifications"><i class="ion-compose"></i> <span class="nav-label">Notifications</span></a>
+                    </li>
+                </ul>
+            </nav>
+                
+        </aside>
+        <!-- Aside Ends-->
+

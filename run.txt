@@ -1,0 +1,38 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rsmsapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rsmsapp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ rsmsapp ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Users\Maame Yaa\Documents\sparkApps\rsmsapp\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Maame Yaa/Documents/sparkApps/rsmsapp/src/main/java/com/rsmsapp/App.java:[13,32] lambda expressions are not supported in -source 1.5
+  (use -source 8 or higher to enable lambda expressions)
+[INFO] 1 error
+[INFO] -------------------------------------------------------------f
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.057 s
+[INFO] Finished at: 2016-07-18T16:31:53-07:00
+[INFO] Final Memory: 9M/101M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project rsmsapp: Compilation failure
+[ERROR] /C:/Users/Maame Yaa/Documents/sparkApps/rsmsapp/src/main/java/com/rsmsapp/App.java:[13,32] lambda expressions are not supported in -source 1.5
+[ERROR] (use -source 8 or higher to enable lambda expressions)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
